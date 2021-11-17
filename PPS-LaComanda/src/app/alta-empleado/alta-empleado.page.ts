@@ -19,7 +19,7 @@ export class AltaEmpleadoPage implements OnInit {
   miFormulario: FormGroup;
   splash: boolean = false;
   usuarioJson = {
-    foto: "../../assets/icon/iconLogoMovimiento.png",
+    foto: "../../assets/SVG.svg",
     perfil: "Mozo",
     estado: true,
   };
@@ -145,7 +145,7 @@ export class AltaEmpleadoPage implements OnInit {
 
   limpiarCampos() {
     this.pickedName = "Mozo";
-    this.usuarioJson.foto = "../../assets/icon/iconLogoMovimiento.png",
+    this.usuarioJson.foto = "../../assets/SVG.svg",
     this.usuarioJson.perfil = "Mozo";
   }
 }

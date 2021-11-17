@@ -20,7 +20,7 @@ export class AltaClientePage implements OnInit {
   miFormulario: FormGroup;
   splash: boolean = false;
   usuarioJson = {
-    foto: "../../assets/icon/iconLogoMovimiento.png",
+    foto: "../../assets/SVG.svg",
     perfil: "Cliente",
     estado: false,
     estadoMesa: false,
@@ -165,7 +165,7 @@ export class AltaClientePage implements OnInit {
   limpiarCampos() {
     this.pickedName = 'Cliente';
     this.usuarioJson = {
-      foto: "../../assets/icon/iconLogoMovimiento.png",
+      foto: "../../assets/SVG.svg",
       perfil: "Cliente",
       estado: false,
       estadoMesa: false,

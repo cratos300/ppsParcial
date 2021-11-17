@@ -19,7 +19,7 @@ export class AltaProductoPage implements OnInit {
   miFormulario: FormGroup;
   productoJson = {
     tipo: "",
-    fotos: ['../../assets/icon/iconLogoMovimiento.png', '../../assets/icon/iconLogoMovimiento.png', '../../assets/icon/iconLogoMovimiento.png'],
+    fotos: ['../../assets/SVG.svg', '../../assets/SVG.svg', '../../assets/SVG.svg'],
   };
   listaProductos = [
     { tipo: "Plato" },
@@ -110,7 +110,7 @@ export class AltaProductoPage implements OnInit {
   }
 
   registrar() {
-    if (this.productoJson.fotos.indexOf(null) === -1 && this.productoJson.fotos.indexOf('../../assets/icon/iconLogoMovimiento.png') === -1) {
+    if (this.productoJson.fotos.indexOf(null) === -1 && this.productoJson.fotos.indexOf('../../assets/SVG.svg') === -1) {
       this.splash = true;
       this.productoJson['nombre'] = this.miFormulario.value.nombre;
       this.productoJson['descripcion'] = this.miFormulario.value.descripcion;
@@ -150,7 +150,7 @@ export class AltaProductoPage implements OnInit {
     this.pickedName = this.listaProductos[0].tipo;
     this.productoJson = {
       tipo: this.pickedName,
-      fotos: ['../../assets/icon/iconLogoMovimiento.png', '../../assets/icon/iconLogoMovimiento.png', '../../assets/icon/iconLogoMovimiento.png'],
+      fotos: ['../../assets/icon/SVG.svg', '../../assets/icon/SVG.svg', '../../assets/icon/SVG.svg'],
     };
   }
 }

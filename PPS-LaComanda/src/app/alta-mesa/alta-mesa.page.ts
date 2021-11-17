@@ -20,7 +20,7 @@ export class AltaMesaPage implements OnInit {
   splash: boolean = false;
   mesaJson = {
     tipo: "",
-    foto: "../../assets/icon/iconLogoMovimiento.png",
+    foto: "../../assets/SVG.svg",
     estado: "Libre",
     cliente: null,
   };
@@ -82,7 +82,7 @@ export class AltaMesaPage implements OnInit {
     this.splash = true;
     this.mesaJson['comensales'] = this.miFormulario.value.comensales;
     this.mesaJson['numero'] = this.miFormulario.value.numero;
-    if (!this.mesaJson.foto.includes('iconLogoMovimiento.png')) {
+    if (!this.mesaJson.foto.includes('SVG.svg')) {
       let nombreFoto = "mesas/" + Date.now() + "." + this.mesaJson['numero'] + ".jpg";
       this.bd.obtenerTodosPromise('mesas').then(snaps => {
         if (snaps.docs.findIndex(doc => doc.data().numero === this.mesaJson['numero']) !== -1) {
@@ -129,7 +129,7 @@ export class AltaMesaPage implements OnInit {
 
   limpiarCampos() {
     this.pickedName = "Por defecto";
-    this.mesaJson.foto = "../../assets/icon/iconLogoMovimiento.png";
+    this.mesaJson.foto = "../../assets/SVG.svg";
     this.mesaJson.tipo = this.pickedName;
     this.mesaJson.estado = "Libre";
     this.mesaJson.cliente = null;

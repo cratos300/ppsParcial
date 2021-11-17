@@ -1,4 +1,4 @@
-<p align="center"><img src="./PPS-LaComanda/src/assets/icon/iconLogoMovimiento.png" width="200" height="200"/> </p>
+<p align="center"><img src="./PPS-LaComanda/src/assets/SVG.svg" width="200" height="200"/> </p>
 
 # **COMANDA-PGR**
 

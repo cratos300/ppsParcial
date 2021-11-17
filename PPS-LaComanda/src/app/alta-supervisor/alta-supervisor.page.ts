@@ -21,7 +21,7 @@ export class AltaSupervisorPage implements OnInit {
   miFormulario: FormGroup;
   splash:boolean = false;
   usuarioJson = {
-    foto: "../../assets/icon/iconLogoMovimiento.png",
+    foto: "../../assets/SVG.svg",
     perfil: "",
     estado: true,
   };
@@ -145,7 +145,7 @@ export class AltaSupervisorPage implements OnInit {
 
   limpiarCampos() {
     this.pickedName = 'Dueño'
-    this.usuarioJson.foto = "../../assets/icon/iconLogoMovimiento.png",
+    this.usuarioJson.foto = "../../assets/SVG.svg",
       this.usuarioJson.perfil = this.pickedName;
   }
 }

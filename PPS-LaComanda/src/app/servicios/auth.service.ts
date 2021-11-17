@@ -41,8 +41,8 @@ export class AuthService {
 
 	registrarUsuario(data) {
 		return this.auth.createUserWithEmailAndPassword(data.correo, data.contrasenia).then(userRef => {
-			console.log(data.foto.includes('iconLogoMovimiento.png'));
-			if (!data.foto.includes('iconLogoMovimiento.png')) {
+			console.log(data.foto.includes('SVG.svg'));
+			if (!data.foto.includes('SVG.svg')) {
 				let nombreFoto = "usuarios/" + Date.now() + "." + data.dni + ".jpg";
 				return this.bd.subirImagen(nombreFoto, data.foto).then(url => {
 					data.foto = url;
@@ -58,7 +58,7 @@ export class AuthService {
 	}
 
 	registrarUsuarioAnonimo(data) {
-		if (!data.foto.includes('iconLogoMovimiento.png')) {
+		if (!data.foto.includes('SVG.svg')) {
 			let nombreFoto = "usuarios/" + Date.now() + "." + data.dni + ".jpg";
 			return this.bd.subirImagen(nombreFoto, data.foto).then(url => {
 				data.foto = url;
